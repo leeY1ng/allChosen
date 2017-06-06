@@ -14,3 +14,6 @@ function uncheckboxed(objName) {
 		}
 	}
 }
+function time() {
+	alert(document.getElementById('appear').innerHTML = Date());
+}
