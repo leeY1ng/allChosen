@@ -3,7 +3,29 @@
 <head>
 <meta charset="utf-8">
 	<title>allChosen</title>
-	<script src="file:///C:/Users/Administrator/Desktop/test/allChosen.js"></script>
+	<script src="file:///C:/Users/Administrator/Desktop/allChosen/allChosen/allChosen.js">
+	function vFrom() {
+		var x = document.forms["Form1"]["name1"].value;
+		if (x != null || x == "") {
+			alert("请输入名字:")
+		}
+		return false;
+	}
+	x = findMax(10,50,300,299,100);
+function findMax() {
+    var x ,max = arguments[0];
+    for (var i = 0; i < arguments.length; i++) {
+    	if (arguments[i] > max) {
+    		max = arguments[i];
+    	    	}    	
+    }
+    return max;
+}
+function myX() {
+	//document.getElementById("ap").innerHTML = x;
+	alert("haha");
+}
+	</script>
 </head>
 <body>
 <p>
@@ -17,7 +39,32 @@
 	<button type="button" onclick="checkboxed('checkbox')">全选</button>
 	<button type="button" onclick="uncheckboxed('checkbox')">取消全选</button>
 </p>
-<p><button type="button" onclick="time()">现在的时间</button></p>
-<p id="appear"></p>
+<p><button type="button" onclick="nowTheTime()">现在的时间</button></p>
+<p id="ap"></p>
+
+<!-- <img src="file:///C:/Users/Administrator/Desktop/google.png" onmousemove="bigImg(this)" onmouseout="normalImg(this)"> -->
+<button type="button" onclick="haha()">haha</button>
+<p>
+<button type="button" onclick="regexp()">date</button>
+</p>
+<p>
+	<form name="Form1" action="file:///C:/Users/Administrator/Desktop/allChosen/allChosen/data.html" onsubmit="return vFrom()" method="post" target="_blank">
+		名字: <input type="text" name="name1">
+		<input type="submit" value="提交">
+	</form>
+</p>
+
+<div>
+	请输入1-10的数字:
+	<p>
+		<input type="text" id="text1">
+		<button type="button" onclick="testInputData()">Submit</button>
+	</p>
+	<p id="testData_p"></p>
+</div>
+
+<div>
+	<button type="button" onclick="mymy()">maxFind</button>
+</div>
 </body>
 </html>
