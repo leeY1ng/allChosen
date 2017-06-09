@@ -51,3 +51,6 @@ function al() {
 		document.getElementById("img1").src = "file:///C:/Users/Administrator/Desktop/google.png";
 	}
 }
+function changeTheColor() {
+	document.getElementsByClassName("pp1")[0].style.color = "red";
+}
